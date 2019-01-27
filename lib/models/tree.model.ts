@@ -338,12 +338,11 @@ export class TreeModel implements ITreeModel {
   }
 
   @action moveNode(node, to) {
-    const fromIndex = node.getIndexInParent();
     const fromParent = node.parent;
+    const fromChildren = fromParent.getField('children');
+    const fromIndex = fromChildren.findIndex(item => item.id === node.id);
 
     if (!this._canMoveNode(node, fromIndex , to)) return;
-
-    const fromChildren = fromParent.getField('children');
 
     // If node doesn't have children - create children array
     if (!to.parent.getField('children')) {
