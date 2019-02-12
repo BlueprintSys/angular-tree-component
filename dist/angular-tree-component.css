@@ -1,7 +1,7 @@
 .tree-children.tree-children-no-padding { padding-left: 0 }
 .tree-children { padding-left: 20px; overflow: hidden }
 .node-drop-slot { display: block; height: 2px }
-.node-drop-slot.is-dragging-over { background: #ddffee; height: 20px; border: 2px dotted #888; }
+.node-drop-slot.is-dragging-over { background: #e5f3fb; height: 20px; border: 2px dotted #888; }
 .toggle-children-wrapper-expanded .toggle-children { transform: rotate(90deg) }
 .toggle-children-wrapper-collapsed .toggle-children { transform: rotate(0); }
 .toggle-children-wrapper {
@@ -44,7 +44,7 @@
 .node-content-wrapper-active, .node-content-wrapper-focused, .node-content-wrapper:hover {
   box-shadow: inset 0 0 1px #999;
 }
-.node-content-wrapper.is-dragging-over { background: #ddffee; box-shadow: inset 0 0 1px #999; }
+.node-content-wrapper.is-dragging-over { background: #e5f3fb; box-shadow: inset 0 0 1px #999; }
 .node-content-wrapper.is-dragging-over-disabled { opacity: 0.5 }
 
 tree-viewport {
