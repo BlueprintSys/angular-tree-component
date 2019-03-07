@@ -68,7 +68,7 @@ export class TreeDropDirective {
   }
 
   private addDisabledClass() {
-    this.el.nativeElement.setAttribute('dropable', '-no');
+    this.el.nativeElement.setAttribute('dropable', 'not');
   }
 
   private removeDisabledClass() {

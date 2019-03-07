@@ -59,7 +59,7 @@ var TreeDropDirective = /** @class */ (function () {
         this.el.nativeElement.setAttribute('dropable', '---');
     };
     TreeDropDirective.prototype.addDisabledClass = function () {
-        this.el.nativeElement.setAttribute('dropable', '-no');
+        this.el.nativeElement.setAttribute('dropable', 'not');
     };
     TreeDropDirective.prototype.removeDisabledClass = function () {
         this.el.nativeElement.setAttribute('dropable', '---');

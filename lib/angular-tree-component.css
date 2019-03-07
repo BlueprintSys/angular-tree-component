@@ -47,18 +47,18 @@
 .node-content-wrapper.is-dragging-over { background: #e5f3fb; box-shadow: inset 0 0 1px #999; }
 .node-content-wrapper.is-dragging-over-disabled { opacity: 0.5 }
 
-.node-content-wrapper[dropable=normal] {
+.node-content-wrapper[dropable=yes] {
   background: #e5f3fb;
   box-shadow: inset 0 0 1px #999;
 }
 
-.node-drop-slot[dropable=normal] {
+.node-drop-slot[dropable=yes] {
   background: #e5f3fb;
   height: 20px;
   border: 2px dotted #888;
 }
 
-.node-content-wrapper[dropable=disabled] {
+.node-content-wrapper[dropable=not] {
   opacity: 0.5;
 }
 
