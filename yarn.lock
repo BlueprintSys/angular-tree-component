@@ -1575,12 +1575,7 @@ lodash.keys@^3.0.0:
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
 
-lodash@4.17.4:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
-  integrity sha1-eCA6TRwyiuHYbcpkYONptX9AVa4=
-
-lodash@^4.17.0, lodash@^4.17.10, lodash@^4.5.1:
+lodash@^4.17.0, lodash@^4.17.10, lodash@^4.17.5, lodash@^4.5.1:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
@@ -1721,15 +1716,15 @@ mkpath@>=0.1.0:
   resolved "https://registry.yarnpkg.com/mkpath/-/mkpath-1.0.0.tgz#ebb3a977e7af1c683ae6fda12b545a6ba6c5853d"
   integrity sha1-67Opd+evHGg65v2hK1Raa6bFhT0=
 
-mobx-angular@>=1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/mobx-angular/-/mobx-angular-3.0.1.tgz#881379acea563c0767550d1f7801ab3434449bb1"
-  integrity sha512-PoEUEw74LoR7Ib6iGGCqvw8xMlmA/Zr5/0TVyhshq4kuzA8pHdvtCiE5AeyRK0w4LhyS7J0Qt0GboTgdhuys+A==
+mobx-angular@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/mobx-angular/-/mobx-angular-2.1.1.tgz#d5e36539acb200186dd5a1170806b4776b9a8b88"
+  integrity sha1-1eNlOayyABht1aEXCAa0d2uai4g=
 
-mobx@>=3:
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/mobx/-/mobx-5.9.0.tgz#a08edd7132787f771409c9c33788a5df66ff7ce7"
-  integrity sha512-D3mY1uM3H9BP5duk5tTanrOq92yqetYKsprPJWvkKDrbs+fro59xrpWX+vtr10YoLgJIFz+a4A8lI+4YtqmCUQ==
+mobx@^3.6.2:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-3.6.2.tgz#fb9f5ff5090539a1ad54e75dc4c098b602693320"
+  integrity sha512-Dq3boJFLpZEvuh5a/MbHLUIyN9XobKWIb0dBfkNOJffNkE3vtuY0C9kSDVpfH8BB0BPkVw8g22qCv7d05LEhKg==
 
 mocha-nightwatch@2.2.9:
   version "2.2.9"
