@@ -1,6 +1,7 @@
-import { EventEmitter, ElementRef } from '@angular/core';
+import { EventEmitter, ElementRef, AfterViewInit, NgZone, OnDestroy } from '@angular/core';
 import { TreeDraggedElement } from '../models/tree-dragged-element.model';
-export declare class TreeDropDirective {
+export declare class TreeDropDirective implements AfterViewInit, OnDestroy {
+    private ngZone;
     private el;
     private treeDraggedElement;
     onDropCallback: EventEmitter<{}>;
@@ -10,7 +11,9 @@ export declare class TreeDropDirective {
     private _allowDrop;
     treeAllowDrop: any;
     allowDrop($event: any): boolean;
-    constructor(el: ElementRef, treeDraggedElement: TreeDraggedElement);
+    constructor(ngZone: NgZone, el: ElementRef, treeDraggedElement: TreeDraggedElement);
+    ngAfterViewInit(): void;
+    ngOnDestroy(): void;
     onDragOver($event: any): void;
     onDragEnter($event: any): void;
     onDragLeave($event: any): void;
