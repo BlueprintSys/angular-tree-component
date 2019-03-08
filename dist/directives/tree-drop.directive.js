@@ -45,6 +45,7 @@ var TreeDropDirective = /** @class */ (function () {
     };
     // @HostListener('dragover', ['$event'])
     TreeDropDirective.prototype.onDragOver = function ($event) {
+        console.log('onDragOver');
         if (!this.allowDrop($event))
             return this.addDisabledClass();
         this.onDragOverCallback.emit({ event: $event, element: this.treeDraggedElement.get() });
@@ -53,12 +54,14 @@ var TreeDropDirective = /** @class */ (function () {
     };
     // @HostListener('dragenter', ['$event'])
     TreeDropDirective.prototype.onDragEnter = function ($event) {
+        console.log('onDragEnter');
         if (!this.allowDrop($event))
             return;
         this.onDragEnterCallback.emit({ event: $event, element: this.treeDraggedElement.get() });
     };
     // @HostListener('dragleave', ['$event'])
     TreeDropDirective.prototype.onDragLeave = function ($event) {
+        console.log('onDragLeave');
         if (!this.allowDrop($event))
             return this.removeDisabledClass();
         this.onDragLeaveCallback.emit({ event: $event, element: this.treeDraggedElement.get() });
