@@ -1,4 +1,4 @@
-import { EventEmitter, ElementRef, Renderer2 } from '@angular/core';
+import { EventEmitter, Renderer, ElementRef } from '@angular/core';
 import { TreeDraggedElement } from '../models/tree-dragged-element.model';
 export declare class TreeDropDirective {
     private el;
@@ -11,7 +11,7 @@ export declare class TreeDropDirective {
     private _allowDrop;
     treeAllowDrop: any;
     allowDrop($event: any): boolean;
-    constructor(el: ElementRef, renderer: Renderer2, treeDraggedElement: TreeDraggedElement);
+    constructor(el: ElementRef, renderer: Renderer, treeDraggedElement: TreeDraggedElement);
     onDragOver($event: any): void;
     onDragEnter($event: any): void;
     onDragLeave($event: any): void;
