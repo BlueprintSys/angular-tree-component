@@ -1,4 +1,4 @@
-import { Directive, Output, Input, EventEmitter, HostListener, ElementRef, Renderer2 } from '@angular/core';
+import { Directive, Output, Input, EventEmitter, HostListener, Renderer, ElementRef } from '@angular/core';
 import { TreeDraggedElement } from '../models/tree-dragged-element.model';
 
 const DRAG_OVER_CLASS = 'is-dragging-over';
@@ -24,7 +24,7 @@ export class TreeDropDirective {
     return this._allowDrop(this.treeDraggedElement.get(), $event);
   }
 
-  constructor(private el: ElementRef, private renderer: Renderer2, private treeDraggedElement: TreeDraggedElement) {
+  constructor(private el: ElementRef, private renderer: Renderer, private treeDraggedElement: TreeDraggedElement) {
   }
 
   @HostListener('dragover', ['$event']) onDragOver($event) {
@@ -60,18 +60,18 @@ export class TreeDropDirective {
   }
 
   private addClass() {
-    this.renderer.addClass(this.el.nativeElement, DRAG_OVER_CLASS);
+    this.renderer.setElementClass(this.el.nativeElement, DRAG_OVER_CLASS, true);
   }
 
   private removeClass() {
-    this.renderer.removeClass(this.el.nativeElement, DRAG_OVER_CLASS);
+    this.renderer.setElementClass(this.el.nativeElement, DRAG_OVER_CLASS, false);
   }
 
   private addDisabledClass() {
-    this.renderer.addClass(this.el.nativeElement, DRAG_DISABLED_CLASS);
+    this.renderer.setElementClass(this.el.nativeElement, DRAG_DISABLED_CLASS, true);
   }
 
   private removeDisabledClass() {
-    this.renderer.removeClass(this.el.nativeElement, DRAG_DISABLED_CLASS);
+    this.renderer.setElementClass(this.el.nativeElement, DRAG_DISABLED_CLASS, false);
   }
 }
